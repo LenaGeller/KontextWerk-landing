@@ -6,11 +6,32 @@ st.set_page_config(
     page_icon="🧭",
     layout="centered",
 )
+# ---- Custom Color Styling ----
+st.markdown("""
+    <style>
+        h1 {
+            color: #0B3D91;   /* dunkles Blau */
+        }
+        h3 {
+            color: #4A6FA5;   /* helleres Blau */
+        }
+        .stLinkButton > a {
+            background-color: #0B3D91;
+            color: white !important;
+            border-radius: 8px;
+            padding: 0.6em 1em;
+            text-decoration: none;
+        }
+        .stLinkButton > a:hover {
+            background-color: #092C6C;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # HERO
 st.title("KontextWerk")
 st.markdown(
-    "<h3 style='color: grey;'>AI • RAG • Knowledge Systems</h3>",
+    "<h3>AI • RAG • Knowledge Systems</h3>",
     unsafe_allow_html=True
 )
 
