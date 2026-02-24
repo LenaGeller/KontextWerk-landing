@@ -7,55 +7,52 @@ st.set_page_config(
     layout="centered",
 )
 
-# --- Header ---
+# HERO
 st.title("KontextWerk")
-st.caption("AI prototypes • RAG systems • Knowledge interfaces")
+st.markdown(
+    "<h3 style='color: grey;'>AI • RAG • Knowledge Systems</h3>",
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+Designing structured AI interfaces for complex documents and knowledge domains.
+"""
+)
+
 st.write("")
 
-st.markdown(
-    """
-I build practical Retrieval-Augmented Generation (RAG) demos and knowledge-based AI prototypes.
-This page is a small portfolio hub with links to selected projects.
-"""
-)
+colA, colB = st.columns([1,1])
+with colA:
+    st.link_button("Explore Mietrecht Demo",
+                   "https://mietrecht-uhxkybmnijgv8kk4t72pru.streamlit.app/")
+with colB:
+    st.link_button("Explore Politik Demo",
+                   "https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/")
 
 st.write("---")
 
-# --- Projects ---
-st.subheader("Demos")
+# ABOUT
+st.subheader("What I build")
 
-col1, col2 = st.columns(2)
-
-with col1:
-    st.markdown("**Mietrecht (DE)**")
-    st.write("Prototype for structured Q&A and first orientation on common rental law questions.")
-    st.link_button("Open demo", "https://mietrecht-uhxkybmnijgv8kk4t72pru.streamlit.app/")
-
-with col2:
-    st.markdown("**Politik Chatbot (DE)**")
-    st.write("RAG demo for exploring political documents and answering questions with sources.")
-    st.link_button("Open demo", "https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/")
+st.markdown("""
+- Retrieval-Augmented Generation (RAG) prototypes  
+- Structured document pipelines (PDF → cleaned → indexed)  
+- AI demos for public sector and complex domains  
+""")
 
 st.write("---")
 
-# --- About / services ---
-st.subheader("What I do")
-st.markdown(
-    """
-- **RAG prototyping** (chunking, metadata, retrieval, evaluation)
-- **Document pipelines** (PDF extraction, cleaning, indexing)
-- **Demo apps** (Streamlit) for non-technical stakeholders
-"""
-)
-
+# CONTACT
 st.subheader("Contact")
-st.markdown(
-    """
-- **Name:** Lena Geller  
-- **Email:** _lena.geller@gmx.de_  
-- **LinkedIn:** _https://www.linkedin.com/in/lena--geller/_
-"""
-)
+
+st.markdown("""
+**Lena Geller**  
+Berlin  
+
+📩 lena.geller@gmx.de  
+🔗 https://www.linkedin.com/in/lena--geller/
+""")
 
 st.write("")
 st.caption("© KontextWerk")
