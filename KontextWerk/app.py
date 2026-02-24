@@ -1,11 +1,11 @@
 import streamlit as st
 
-# --- Page config ---
 st.set_page_config(
     page_title="KontextWerk",
-    page_icon="🧭",
+    page_icon="🧠",
     layout="centered",
 )
+
 # ---- Custom Color Styling ----
 st.markdown("""
     <style>
@@ -29,11 +29,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # HERO
-st.title("KontextWerk")
-st.markdown(
-    "<h3>AI • RAG • Knowledge Systems</h3>",
-    unsafe_allow_html=True
-)
+st.title("Kontext Vert")
+st.markdown("<h3>AI • RAG • Knowledge Systems</h3>", unsafe_allow_html=True)
 
 st.markdown(
     """
