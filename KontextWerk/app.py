@@ -29,7 +29,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # HERO
-st.title("Kontext Vert")
+st.title("KontextWerk")
 st.markdown("<h3>AI • RAG • Knowledge Systems</h3>", unsafe_allow_html=True)
 
 st.markdown(
